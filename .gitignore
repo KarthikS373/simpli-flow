@@ -1,0 +1,43 @@
+# Python-specific
+*.pyc
+__pycache__/
+*.egg-info/
+
+# Bundles
+dist/
+build/
+
+# Virtualenv
+venv/
+
+# dotenv
+.env
+secrets.toml
+
+# IDE-specific
+.vscode/
+.idea/
+.pycharm/
+
+# Dependency management
+pip-lock.txt
+requirements.txt
+
+# Other
+.DS_Store
+
+# Log files
+*.log
+error.log
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
