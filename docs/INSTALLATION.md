@@ -60,3 +60,12 @@ Launch the Streamlit application with the following command:
 ```shell
 streamlit run ./src/app.py
 ```
+## For contract deployment using python
+
+```shell
+pip install flow_py_sdk
+```
+In order to run the deployment contract use 
+```shell
+python3 src/deployment/contract_deployment.py
+```
