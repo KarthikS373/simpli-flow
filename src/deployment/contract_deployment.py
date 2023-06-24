@@ -17,8 +17,8 @@ async def deployment(address,private_key):
    #contract created by gpt is placed here
    #in order to run more than one time change the name of contract on bothh position 
     contract = {
-            "Name": "Testpf",
-            "source": """pub contract Testpf {
+            "Name": "Test1",
+            "source": """pub contract Test1 {
                                 pub fun add(a: Int, b: Int): Int {
                                     return a + b
                                 }
