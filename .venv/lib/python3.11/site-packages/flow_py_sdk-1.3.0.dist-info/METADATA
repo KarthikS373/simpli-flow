@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: flow-py-sdk
+Version: 1.3.0
+Summary: A python SKD for the flow blockchain
+Home-page: https://github.com/janezpodhostnik/flow-py-sdk
+License: MIT
+Author: Janez Podhostnik
+Author-email: janez.podhostnik@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: betterproto[compiler] (==v2.0.0-beta5)
+Requires-Dist: ecdsa (>=v0.18,<0.19)
+Requires-Dist: grpcio-tools (>=1.51,<2.0)
+Requires-Dist: grpclib (>=0.4,<0.5)
+Requires-Dist: rlp (>=3.0,<4.0)
+Project-URL: Repository, https://github.com/janezpodhostnik/flow-py-sdk
+Description-Content-Type: text/markdown
+
+The Flow Python SDK provides a set of packages for Python developers to build applications that interact with the Flow network.
+
+[![PyPI](https://img.shields.io/pypi/v/flow-py-sdk.svg)](https://pypi.org/project/flow-py-sdk/)
+[![codecov](https://codecov.io/gh/janezpodhostnik/flow-py-sdk/branch/master/graph/badge.svg)](https://codecov.io/gh/codecov/example-go)
+
+
+See the [guide](https://janezpodhostnik.github.io/flow-py-sdk/python_SDK_guide/)!
+
+
+Note: This SDK is also fully compatible with the Flow Emulator and can be used for local development.
+
+## Installing
+
+To start using the SDK, install Python 3.9 or higher and install package:
+
+```sh
+pip install flow-py-sdk
+```
+
+or if using poetry:
+
+```sh
+poetry add flow-py-sdk
+```
+
+## Contributors
+
+<a href="https://github.com/janezpodhostnik/flow-py-sdk/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=janezpodhostnik/flow-py-sdk" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
