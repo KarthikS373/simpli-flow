@@ -1,4 +1,5 @@
 from time import time
+from random import randint
 
 import streamlit as st
 from streamlit_chat import message
@@ -23,11 +24,14 @@ with st.form("chat_input", clear_on_submit=True):
 
 for msg in st.session_state.messages:
     message(msg["content"], is_user=msg["role"] == "user")
-    
+
 if user_input:
+    key = f"chat_widget_{int(time())}_{randint(0, 100)}"
     st.session_state.messages.append({"role": "user", "content": user_input})
-    message(user_input, is_user=True)
-    bot_response = get_chatbot_response(user_input)
+    message(user_input, is_user=True, key=key)
+    if 'previous' not in st.session_state:
+        st.session_state['previous'] = None
+    bot_response, st.session_state['previous'] = get_chatbot_response(user_input, st.session_state['previous'])
     st.session_state.messages.append({"role": "assistant", "content": bot_response})
-    key = f"chat_widget_{int(time())}"
+    key = f"chat_widget_{int(time())}_{randint(0, 100)}"
     message(bot_response, key=key)
