@@ -63,34 +63,30 @@ Simpli Flow is an all-in-one solution designed to revolutionize blockchain inter
 
 ## Meet the Team
 
-<div style="display: flex; flex-direction: row; justify-content: center;">
-
-<!-- Team Member 1 -->
-<div width="20%">
+<table cellpadding="0" align="center">
+  <tr style="padding: 0">
+    <td valign="top"><div width="20%">
   <img src="./assets/team/karthik.jpeg" alt="" style="border-radius: 36px; object-fit: cover; object-position: top;" width="200px" height="200px" />
   <h3>Karthik S</h3>
   <p></p>
 </div>
-
-<!-- Team Member 2 -->
-<div width="20%">
+</td>
+    <td valign="top"><div width="20%">
   <img src="./assets/team/advit.jpeg" alt="" style="border-radius: 36px; object-fit: cover; object-position: top;" width="200px" height="200px" />
   <h3>Advit Mahale</h3>
   <p></p>
 </div>
-
-<!-- Team Member 3 -->
-<div width="20%">
+</td>
+    <td valign="top"><div width="20%">
   <img src="./assets/team/disha.jpeg" alt="" style="border-radius: 36px; object-fit: cover; object-position: top;" width="200px" height="200px" />
   <h3>Disha Dwivedi</h3>
   <p></p>
-</div>
-
-<!-- Team Member 4 -->
-<div width="20%">
+</div></td>
+    <td valign="top"><div width="20%">
   <img src="./assets/team/gaurav.jpeg" alt="" style="border-radius: 36px; object-fit: cover; object-position: top;" width="200px" height="200px" />
   <h3>Gaurav Kabra</h3>
   <p></p>
 </div>
-
-</div>
+</td>
+  </tr>
+</table>
