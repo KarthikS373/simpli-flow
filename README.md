@@ -13,6 +13,8 @@
 
 # Project : SIMPLI FLOW
 
+ <img src="./assets/project-overview.png" alt="" />
+
 Simpli Flow is an all-in-one solution designed to revolutionize blockchain interactions on the Flow blockchain. With its comprehensive features and user-friendly interface, Simpli Flow empowers users and developers to seamlessly navigate the complexities of the Flow blockchain ecosystem. Powered by a self-trained GPT model, Simpli Flow combines advanced artificial intelligence with blockchain expertise to offer an unparalleled experience in auditing, building, adapting, creating, and deploying contracts, transactions, and providing general answers, providing an accessible, efficient, and all-encompassing solution for the Flow blockchain.
 
 </div>
@@ -56,7 +58,7 @@ Simpli Flow is an all-in-one solution designed to revolutionize blockchain inter
 </p> 
     
 <p align="center">
-    <img width="49%" src="./assets/project-gallery/" alt=""/>
+    <img width="49%" src="./assets/project-gallery/5.png" alt=""/>
 &nbsp;
     <img width="49%" src="./assets/project-gallery/" alt=""/>
 </p>
@@ -66,24 +68,24 @@ Simpli Flow is an all-in-one solution designed to revolutionize blockchain inter
 <table cellpadding="0" align="center">
   <tr style="padding: 0">
     <td valign="top"><div width="20%">
-  <img src="./assets/team/karthik.jpeg" alt="" style="border-radius: 36px; object-fit: cover; object-position: top;" width="200px" height="200px" />
+  <img src="./assets/team/karthik.jpeg" alt=""  width="200px" height="200px" />
   <h3>Karthik S</h3>
   <p></p>
 </div>
 </td>
     <td valign="top"><div width="20%">
-  <img src="./assets/team/advit.jpeg" alt="" style="border-radius: 36px; object-fit: cover; object-position: top;" width="200px" height="200px" />
+  <img src="./assets/team/advit.jpeg" alt=""  width="200px" height="200px" />
   <h3>Advit Mahale</h3>
   <p></p>
 </div>
 </td>
     <td valign="top"><div width="20%">
-  <img src="./assets/team/disha.jpeg" alt="" style="border-radius: 36px; object-fit: cover; object-position: top;" width="200px" height="200px" />
+  <img src="./assets/team/disha.jpeg" alt=""  width="200px" height="200px" />
   <h3>Disha Dwivedi</h3>
   <p></p>
 </div></td>
     <td valign="top"><div width="20%">
-  <img src="./assets/team/gaurav.jpeg" alt="" style="border-radius: 36px; object-fit: cover; object-position: top;" width="200px" height="200px" />
+  <img src="./assets/team/gaurav.jpeg" alt=""  width="200px" height="200px" />
   <h3>Gaurav Kabra</h3>
   <p></p>
 </div>
