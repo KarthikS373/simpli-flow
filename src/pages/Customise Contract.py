@@ -1,6 +1,10 @@
+import sys
+sys.path.append('..')
+
 import streamlit as st
 
 from streamlit_ace import st_ace
+from audit import CadenceContractAuditor
 
 st.title("Customise your Smart Contract")
 st.write('''
@@ -29,7 +33,8 @@ with col2:
 
 if button1:
     #deploy audit function call kardo yaha se
-    print("Beginning Contract Audit ...")
+    st.subheader("Audit Results")
+    st.text(CadenceContractAuditor(content).generate_report())
 
 if button2:
     #deploy call kardo yaha se

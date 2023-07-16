@@ -1,3 +1,6 @@
+import sys
+sys.path.append('..')
+
 from time import time
 from random import randint
 
@@ -8,7 +11,7 @@ from chatbot import get_chatbot_response
 
 st.set_page_config(page_title="Flow Hackathon", layout="centered")
 
-st.title("Our Chatbot")
+st.title("Simpli Flow")
 
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "How can I help you?"}]

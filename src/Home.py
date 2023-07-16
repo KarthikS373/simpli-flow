@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 st.set_page_config(layout="wide")   
 
-logo_image = Image.open("./assets/afl1.png")
+logo_image = Image.open("../assets/afl1.png")
 st.image(logo_image, use_column_width=True)
 
 
@@ -16,7 +16,7 @@ st.markdown("<h5>Generate, Audit, and Deploy Smart Contracts on the Flow Blockch
 
 # CTA buttons
 
-st.markdown("<a href='https://your_domain.com/try_it_out' target='_blank'><button class='cta-button'>Try Now →</button></a>", unsafe_allow_html=True)
+st.markdown("<a href='/Chat' target='_blank'><button class='cta-button'>Try Now →</button></a>", unsafe_allow_html=True)
 
 # Footer
 st.markdown("---")
