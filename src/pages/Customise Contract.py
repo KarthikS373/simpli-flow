@@ -40,4 +40,11 @@ if button1:
 if button2:
     #deploy call kardo yaha se
     st.subheader("Deployment Results")
-    st.text(deployment("4edbd4bc470a8479","b25bd802d71b47a4c86aec8d620eea8ee4cdd12b4b94abee068aca24afb2f332"))
+    st.text(deployment("4edbd4bc470a8479","b25bd802d71b47a4c86aec8d620eea8ee4cdd12b4b94abee068aca24afb2f332",{
+            "Name": "Test9",
+            "source": """pub contract Test9 {
+                                pub fun add(a: Int, b: Int): Int {
+                                    return a + b
+                                }
+                                }""",
+    }))

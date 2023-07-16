@@ -13,20 +13,13 @@ from config import Config
 # Contract Deployment
 # -------------------------------------------------------------------------
 # parameters passed from gpt can also pass the contract later
-async def deployment(address,private_key):
+async def deployment(address,private_key,contracts):
    #contract created by gpt is placed here
    #in order to run more than one time change the name of contract on bothh position 
-    contract = {
-            "Name": "Test1",
-            "source": """pub contract Test1 {
-                                pub fun add(a: Int, b: Int): Int {
-                                    return a + b
-                                }
-                                }""",
-    }
+    contract = contracts
     contract_source_hex = bytes(contract["source"], "UTF-8").hex()
     #the parameter is given only till gpt is not connected with config.py
-    abc = Config("../flow.json",address,private_key)
+    abc = Config("./flow.json",address,private_key)
     #Comment above and Uncomment below in case of gpt connection
     #abc = Config;
     async with flow_client(
@@ -66,6 +59,13 @@ async def deployment(address,private_key):
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
     #can change the address and private key using the testnet
-    loop.run_until_complete(deployment("4edbd4bc470a8479","b25bd802d71b47a4c86aec8d620eea8ee4cdd12b4b94abee068aca24afb2f332"))
+    loop.run_until_complete(deployment("4edbd4bc470a8479","b25bd802d71b47a4c86aec8d620eea8ee4cdd12b4b94abee068aca24afb2f332",{
+            "Name": "Test9",
+            "source": """pub contract Test9 {
+                                pub fun add(a: Int, b: Int): Int {
+                                    return a + b
+                                }
+                                }""",
+    }))
     
 
