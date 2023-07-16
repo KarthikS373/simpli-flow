@@ -1,0 +1,33 @@
+// SimpleCollectible contract for non-fungible tokens (NFTs)
+
+pub contract SimpleCollectible {
+    // Resource representing a collectible item
+    pub resource Collectible {
+        pub let owner: Address
+        pub let id: UInt64
+
+        init(owner: Address, id: UInt64) {
+            self.owner = owner
+            self.id = id
+        }
+    }
+
+    // Function to mint a collectible and assign ownership to an address
+    pub fun mintCollectible(owner: Address, id: UInt64) {
+        let newCollectible <- create Collectible(owner: owner, id: id)
+        destroy newCollectible
+    }
+
+    // Function to transfer a collectible from one address to another
+    pub fun transferCollectible(collectible: &Collectible, to: Address) {
+        pre {
+            collectible.owner == signer: "Only the owner can transfer the collectible"
+        }
+        post {
+            collectible.owner == to: "Transfer failed"
+        }
+
+        // Assign the new owner to the collectible
+        collectible.owner = to
+    }
+}
