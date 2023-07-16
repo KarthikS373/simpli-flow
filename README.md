@@ -19,6 +19,8 @@ Simpli Flow is an all-in-one solution designed to revolutionize blockchain inter
 
 </div>
 
+> Read more [here](https://www.canva.com/design/DAFozPhX16g/odBtDJdgRgdFohjFqJycqA/view?utm_content=DAFozPhX16g&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+
 ## Features
 
 - Dynamic Contract Building: Build contracts effortlessly with Simpli Flow's intuitive interface. Users can leverage the power of the GPT model to generate contract templates, adapt existing contracts to meet specific requirements, and explore a vast library of pre-built contract components
@@ -58,9 +60,9 @@ Simpli Flow is an all-in-one solution designed to revolutionize blockchain inter
 </p> 
     
 <p align="center">
-    <img width="49%" src="./assets/project-gallery/5.png" alt=""/>
+    <img width="49%" src="./assets/project-gallery/5.jpeg" alt=""/>
 &nbsp;
-    <img width="49%" src="./assets/project-gallery/" alt=""/>
+    <img width="49%" src="./assets/project-gallery/6.png" alt=""/>
 </p>
 
 ## Meet the Team
