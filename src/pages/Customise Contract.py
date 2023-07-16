@@ -1,12 +1,12 @@
+from contract_deployment import deployment
+import asyncio
+from audit import CadenceContractAuditor
+from streamlit_ace import st_ace
+from random import randint
+import streamlit as st
 import sys
 sys.path.append('..')
 
-import streamlit as st
-from random import randint
-from streamlit_ace import st_ace
-from audit import CadenceContractAuditor
-from contract_deployment import deployment;
-import asyncio
 
 st.title("Customise your Smart Contract")
 st.write('''
@@ -34,17 +34,17 @@ with col2:
 
 
 if button1:
-    #deploy audit function call kardo yaha se
     st.subheader("Audit Results")
     st.text(CadenceContractAuditor(content).generate_report())
 
 if button2:
-    #deploy call kardo yaha se
     st.subheader("Deployment Results")
-    rand = randint(0,1000000000)
-    st.text(asyncio.new_event_loop().run_until_complete(deployment("4edbd4bc470a8479","b25bd802d71b47a4c86aec8d620eea8ee4cdd12b4b94abee068aca24afb2f332",{
-            "Name": f"Test{rand}",
-            "source": f"""pub contract Test{rand} {
+    rand = randint(0, 1000000000)
+    hash = asyncio.new_event_loop().run_until_complete(deployment("4edbd4bc470a8479", "b25bd802d71b47a4c86aec8d620eea8ee4cdd12b4b94abee068aca24afb2f332", {
+        "Name": f"Test{rand}",
+        "source": f"""pub contract Test{rand} {{
                                 {content}
-                                }""",
-    })))
+                                }}""",
+    }))
+    st.text(f"Transaction hash: {hash}")
+    st.markdown(f"[View on block explorer](https://testnet.flowscan.org/transaction/{hash})")
