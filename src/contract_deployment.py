@@ -54,14 +54,14 @@ async def deployment(address,private_key,contracts):
     result = await client.execute_transaction(transaction)
     print(result.id.hex())
     answer = result.id.hex()
-    return answer
+    return result.id.hex()
     
 if __name__ == "__main__":
     loop = asyncio.get_event_loop()
     #can change the address and private key using the testnet
     loop.run_until_complete(deployment("4edbd4bc470a8479","b25bd802d71b47a4c86aec8d620eea8ee4cdd12b4b94abee068aca24afb2f332",{
-            "Name": "Test9",
-            "source": """pub contract Test9 {
+            "Name": "Test14",
+            "source": """pub contract Test14 {
                                 pub fun add(a: Int, b: Int): Int {
                                     return a + b
                                 }

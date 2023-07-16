@@ -6,6 +6,7 @@ import streamlit as st
 from streamlit_ace import st_ace
 from audit import CadenceContractAuditor
 from contract_deployment import deployment;
+import asyncio
 
 st.title("Customise your Smart Contract")
 st.write('''
@@ -40,11 +41,11 @@ if button1:
 if button2:
     #deploy call kardo yaha se
     st.subheader("Deployment Results")
-    st.text(deployment("4edbd4bc470a8479","b25bd802d71b47a4c86aec8d620eea8ee4cdd12b4b94abee068aca24afb2f332",{
-            "Name": "Test9",
-            "source": """pub contract Test9 {
+    st.text(asyncio.new_event_loop().run_until_complete(deployment("4edbd4bc470a8479","b25bd802d71b47a4c86aec8d620eea8ee4cdd12b4b94abee068aca24afb2f332",{
+            "Name": "Test15",
+            "source": """pub contract Test15 {
                                 pub fun add(a: Int, b: Int): Int {
                                     return a + b
                                 }
                                 }""",
-    }))
+    })))

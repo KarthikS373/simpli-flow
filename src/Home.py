@@ -2,7 +2,7 @@ import streamlit as st
 from PIL import Image
 st.set_page_config(layout="wide")   
 
-logo_image = Image.open("../assets/afl1.png")
+logo_image = Image.open("./assets/afl1.png")
 st.image(logo_image, use_column_width=True)
 
 
