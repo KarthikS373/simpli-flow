@@ -19,7 +19,7 @@ async def deployment(address,private_key,contracts):
     contract = contracts
     contract_source_hex = bytes(contract["source"], "UTF-8").hex()
     #the parameter is given only till gpt is not connected with config.py
-    abc = Config("./flow.json",address,private_key)
+    abc = Config("../flow.json",address,private_key)
     #Comment above and Uncomment below in case of gpt connection
     #abc = Config;
     async with flow_client(
