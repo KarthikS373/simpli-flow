@@ -11,6 +11,7 @@ intents:
   - audit_contract
   - deploy_contract
   - generate_contract
+  - general_question
 
 responses:
   utter_greet:

@@ -113,3 +113,12 @@ nlu:
     - How can I generate a contract?
     - What is the process for generating a contract?
     - I want to create a contract.
+
+- intent: general_question
+  examples: |
+    - Can I ask you a question?
+    - I have a question.
+    - Do you have a moment to answer a question?
+    - May I get some information by asking a question?
+    - Is it alright if I ask a question?
+
