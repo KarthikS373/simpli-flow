@@ -1,3 +1,6 @@
 [server]
 enableCORS = false
 enableXsrfProtection = false
+[theme]
+base="dark"
+primaryColor="#00ef8b"
