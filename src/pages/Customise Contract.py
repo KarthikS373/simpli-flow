@@ -5,6 +5,7 @@ import streamlit as st
 
 from streamlit_ace import st_ace
 from audit import CadenceContractAuditor
+from contract_deployment import deployment;
 
 st.title("Customise your Smart Contract")
 st.write('''
@@ -38,4 +39,5 @@ if button1:
 
 if button2:
     #deploy call kardo yaha se
-    print("Deploying Contract ")
+    st.subheader("Deployment Results")
+    st.text(deployment("4edbd4bc470a8479","b25bd802d71b47a4c86aec8d620eea8ee4cdd12b4b94abee068aca24afb2f332"))
