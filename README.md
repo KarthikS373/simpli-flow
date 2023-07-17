@@ -5,15 +5,16 @@
   <a href="https://flow-hackathon-s2.devfolio.co/">
     <img alt="Flow Hackathon Logo" src="./assets/flow-hack.png" width="49%" />
   </a>
-  <img alt="Project Logo" src="./assets/flow-hack.png" width="49%" />
   </div>
 </div>
 
-# FLOW HACKATHON SEASON 2
+## FLOW HACKATHON SEASON 2
 
-# Project : SIMPLI FLOW
+# SIMPLI FLOW
 
  <img src="./assets/project-overview.png" alt="" />
+
+ The fastest way to build onFlow
 
 Simpli Flow is an all-in-one solution designed to revolutionize blockchain interactions on the Flow blockchain. With its comprehensive features and user-friendly interface, Simpli Flow empowers users and developers to seamlessly navigate the complexities of the Flow blockchain ecosystem. Powered by a self-trained GPT model, Simpli Flow combines advanced artificial intelligence with blockchain expertise to offer an unparalleled experience in auditing, building, adapting, creating, and deploying contracts, transactions, and providing general answers, providing an accessible, efficient, and all-encompassing solution for the Flow blockchain.
 
