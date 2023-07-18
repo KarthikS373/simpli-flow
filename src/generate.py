@@ -12,7 +12,7 @@ openai.api_key = os.getenv('API_KEY')
 
 
 def generate_code(description):
-    description_fin = "\nYou are an expert in developing Smart Contracts in the Cadence Language. Generate Code for the following Smart Contract:"+description 
+    description_fin = "\nYou are an expert in developing Smart Contracts in the Cadence Language. Use pub instead of public and generate Code for the following Smart Contract:"+description 
     response = openai.Completion.create(
         engine='text-davinci-003',
         prompt=description_fin,
